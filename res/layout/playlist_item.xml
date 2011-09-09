@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:gravity="left">
+    
+    <ImageView
+        android:id="@+id/playlist_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView  
+        android:id="@+id/playlist_item_text"
+
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+	    android:layout_toLeftOf="@+id/playlist_icon_mover"
+	    android:layout_toRightOf="@+id/playlist_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical"
+
+	    android:padding="5dp"
+	    android:textSize="13sp" />
+	    
+    <ImageView
+    	android:id="@+id/playlist_icon_mover"
+    	
+    	android:layout_width="40dp"
+    	android:layout_height="40dp"
+		android:layout_alignParentLeft="false" 
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+    	android:src="@drawable/up_down" />
+
+        
+</RelativeLayout> 
+	
